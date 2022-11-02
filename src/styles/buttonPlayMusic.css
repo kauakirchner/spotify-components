@@ -1,0 +1,14 @@
+.play {
+    border-radius: 15px;
+    border: 1px solid green;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    aling-items: center;
+}
+
+.play:hover {
+    background-color: transparent;
+    border: 2px solid green;
+    transform: scale(1.040);
+}
