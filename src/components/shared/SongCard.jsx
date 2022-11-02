@@ -8,17 +8,17 @@ const SongCard = ({imageUrl, title, subtitle}) => {
 
     function changeMusicState() {
         setIsMusicPlay(!isMusicPlay);
-        const musicTitle = document.getElementById('is-play-music');
-        isMusicPlay === true 
-        ? musicTitle.classList.add('isPlayMusicTrue') 
-        : musicTitle.classList.remove('isPlayMusicTrue');
     }
 
     return (
         <div className="card-container">
             <img src={imageUrl} alt="" className="image" />
             <div>
-                <div id="is-play-music">{title}</div>
+                {isMusicPlay === true ? (
+                    <div className="isPlayMusicTrue">{title}</div>
+                ) : (
+                    <div>{title}</div>
+                )}
                 <div className="subtitle">{subtitle}</div>
             </div>
             <div className="btn-container">

@@ -21,14 +21,14 @@
     width: 70%;
     margin: 15px auto;
     background-color: transparent;
-    border: 2px solid #f1f1f1;
+    border: 1px solid green;
     color: #fff;
 }
 
 .inpt-field:focus {
     transform: scale(1.035);
-    transition: .3s;
-    transition-delay: .2s;
+    transition: .2s;
+    transition-delay: .1s;
 }
 
 .inpt-field::placeholder {
