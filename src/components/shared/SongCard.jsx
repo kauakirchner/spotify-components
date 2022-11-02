@@ -5,6 +5,7 @@ import '../../styles/songcard.css'
 
 const SongCard = ({imageUrl, title, subtitle}) => {
     const [isMusicPlay, setIsMusicPlay] = useState(false);
+
     function changeMusicState() {
         setIsMusicPlay(!isMusicPlay);
         const musicTitle = document.getElementById('is-play-music');

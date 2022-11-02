@@ -14,3 +14,23 @@
     justify-content: center;
     flex-direction: column;
 }
+
+.inpt-field {
+    border-radius: 8px;
+    outline: none;
+    width: 70%;
+    margin: 15px auto;
+    background-color: transparent;
+    border: 2px solid #f1f1f1;
+    color: #fff;
+}
+
+.inpt-field:focus {
+    transform: scale(1.035);
+    transition: .3s;
+    transition-delay: .2s;
+}
+
+.inpt-field::placeholder {
+    color: #fff;
+}
